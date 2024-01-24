@@ -143,3 +143,8 @@ video {
     left: 10px;
     top: 8px;
 }
+
+.links a:hover {
+    background-color: #fff;
+    color: #000000;
+}
