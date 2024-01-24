@@ -7,7 +7,7 @@
 
 video {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     position: absolute;
     z-index: -1;
@@ -147,4 +147,98 @@ video {
 .links a:hover {
     background-color: #fff;
     color: #000000;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/imagem-de-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img h2 {
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-shadow: 1px 5px 2px #000000;
+    margin-bottom: 40px;
+}
+
+.bg-img table {
+    text-align: center;
+}
+
+.bg-img thead th {
+    font-size: 21px;
+    color: #fff;
+}
+
+.bg-img tbody tr {
+    font-weight: 600;
+    position: relative;
+}
+
+.bg-img tr td,
+.bg-img tr th {
+    padding: 20px;
+}
+
+.bg-img thead th:first-of-type,
+.bg-img tbody td:first-of-type {
+    padding: 0 40px;
+}
+
+.bg-img thead tr:first-of-type {
+    background-color: #000000cc;
+}
+
+.bg-img tbody tr:nth-of-type(odd) {
+    background-color: #ffffffbf;
+}
+
+.bg-img tbody tr:nth-of-type(even) {
+    background-color: #000000cc;
+    color: #fff;
+}
+
+.bg-img tbody tr .cbf::before {
+    background-image: url('assets/cbf.png');
+}
+
+.bg-img tbody tr .santos::before {
+    background-image: url('assets/santos.png')
+}
+
+.bg-img tbody tr .barc::before {
+    background-image: url('assets/barcelona.png')
+}
+
+.bg-img tbody tr .psg::before {
+    background-image: url('assets/psg.png')
+}
+
+.bg-img tbody tr .al::before {
+    background-image: url('assets/alhilal.png')
+}
+
+.bg-img tbody tr .cbf::before,
+.bg-img tbody tr .santos::before,
+.bg-img tbody tr .barc::before,
+.bg-img tbody tr .psg::before,
+.bg-img tbody tr .al::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    left: 7px;
+    top: 14px;
+    margin-right: 10px;
 }
