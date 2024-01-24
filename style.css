@@ -95,3 +95,51 @@ video {
     margin-bottom: 50px;
 }
 
+.links a {
+    position: relative;
+    background-color: #0200006e;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 650px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.links .yt::before {
+    background-image: url('assets/youtube.png');
+}
+
+.links .inst::before {
+    background-image: url('assets/instagram.png');
+}
+
+.links .tw::before {
+    background-image: url('assets/twitter.png');
+}
+
+.links .fc::before {
+    background-image: url('assets/facebook.png');
+}
+
+.links .twt::before {
+    background-image: url('assets/twitch.png');
+}
+
+.links .yt::before,
+.links .inst::before,
+.links .tw::before,
+.links .fc::before,
+.links .twt::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-size: 27px 27px;
+    left: 10px;
+    top: 8px;
+}
